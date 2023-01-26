@@ -1,9 +1,13 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-}
-module.exports = {
-  images: {
-    domains: ['https://milkywayfiasco.sfo2.digitaloceanspaces.com/images/'],
-  },
-}
 
+  images: {
+    domains: [
+      'res.cloudinary.com',
+      'milkywayfiasco.sfo2.cdn.digitaloceanspaces.com',
+    ],
+  },
+};
+
+module.exports = nextConfig;
